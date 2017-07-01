@@ -51,7 +51,7 @@ Array.prototype.remove = function(key)
 
 Array.prototype.addIfUnique = function(key, value)
 {
-	if(this.contains(key))
+	if(this.contains(key)) // this.includes might not require contains from below
 		this[key] = value;
 	else
 	{
